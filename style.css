@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#small-box {
+    width: 400px;
+}
+
+#medium-box {
+    width: 600px;
+}
+
+#large-box {
+    width: 900px;
+}
+
+#small-box, #medium-box, #large-box {
+    border: black solid 4px;
+    margin: 5px 0px;
+}
+
+img {
+    display: block;
+    width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    #large-box {
+        background: green;
+        color: white;
+        padding: 15px;
+        font-style: italic;
+    }
+
+    body {
+        background: rgb(105, 105, 156);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #small-box {
+        background: pink;
+        text-align:center;
+    }
+
+    body {
+        background: rgb(45,45,45);
+        color: white;
+    }
+}
+
+
